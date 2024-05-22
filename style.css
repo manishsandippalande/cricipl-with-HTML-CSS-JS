@@ -1,0 +1,82 @@
+.cont-matches{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding-top: 5vh;
+}
+.nav{
+    background-color: transparent;
+}
+.img-cont{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+}
+.img-cont img{
+    width: 100%;
+    height: 100vh;
+}
+.navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.navbar-brand:hover{
+    color: rgb(251, 255, 0);
+}
+
+/* match cards */
+
+.matchcard{
+    width: 85%;
+    min-height: 30vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.insidecont{
+    width: 100%;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: auto;
+}
+.vs{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.team1, .team2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+.score{
+    font-size: 1.2rem;
+}
+.result{
+    text-align: center;
+    color: rgb(0, 255, 0);
+    margin-top: 5px;
+}
+.matchcard{
+    cursor: pointer;
+}
+.matchcard:hover{
+    box-shadow: 0px 0px 10px aqua;
+}
+.nav-item a{
+    color: white;
+}

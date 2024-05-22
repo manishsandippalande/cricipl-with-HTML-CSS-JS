@@ -1,0 +1,79 @@
+.background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+}
+.background img{
+    width: 100%;
+}
+.navbar{
+    /* position: absolute; */
+    
+}
+.navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.pointstable{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+.pointstable .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conttbl{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 3vh;
+}
+table{
+    width: 100%;
+    margin-top: 9vh;
+    border: 2px solid aqua;
+    margin-bottom: 5vh;
+}
+th{
+    text-align: center;
+}
+
+.throw{
+    box-shadow:  1px 1px 15px rgb(0, 255, 238);
+}
+table th{
+    color: rgb(0, 255, 213);
+    padding: 2vh;
+    border: 2px solid rgb(49, 255, 238);
+}
+table td{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-left: 2px solid rgb(49, 255, 238);
+    border-right: 2px solid rgb(49, 255, 238);
+    padding: 1.5vh;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.tname{
+    text-align: left;
+    padding-left: 4vh;
+}
+.tname{
+    width: 50%;
+}
+.col{
+    width: 10%;
+}
+#year{
+    padding: 2vh;
+    font-size: 1.3rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 238);
+    width: 70vh;
+    margin: auto;
+    outline: 0px;
+}
