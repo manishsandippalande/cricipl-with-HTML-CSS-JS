@@ -39,6 +39,11 @@ async function matchdetails(matchId) {
     let notbatted1 = document.getElementById("notbatted1")
     for (i=1; i<=11; i++) {
         let isbatted1 = `${inn1[`bat_${i}`].outDesc}`
+        let iscaptain = `${inn1[`bat_${i}`].isCaptain}`
+        let cstr = ""
+        if(iscaptain == "true"){
+            cstr = "(C)"
+        }
         if(isbatted1 == ""){
             notbatted1.innerHTML += `${inn1[`bat_${i}`].batName}`+", "
         }
@@ -47,7 +52,7 @@ async function matchdetails(matchId) {
             <tr class="trdata">
                 <td class="playernameval">
                     <div class="minidata">
-                        <div class="pname">${inn1[`bat_${i}`].batName}</div>
+                        <div class="pname">${inn1[`bat_${i}`].batName}${cstr}</div>
                         <div class="outdesc">${inn1[`bat_${i}`].outDesc}</div>
                     </div>
                 </td>
@@ -91,22 +96,21 @@ async function matchdetails(matchId) {
     let notbatted2 = document.getElementById("notbatted2")
     for (i=1; i<=11; i++) {
         let iscaptain = `${inn2[`bat_${i}`].isCaptain}`
-        if(iscaptain = true){
-            iscaptain = "(C)"
-        }
-        else{
-            iscaptain = ""
+        let cstr = ""
+        if(iscaptain == "true"){
+            cstr = "(C)"
         }
         let isbatted2 = `${inn2[`bat_${i}`].outDesc}`
         if(isbatted2 == ""){
             notbatted2.innerHTML += `${inn2[`bat_${i}`].batName}`+", "
         }
         else{
+          console.log(cstr)
         inn2tbl.innerHTML += `
             <tr class="trdata">
                 <td class="playernameval">
                     <div class="minidata">
-                        <div class="pname">${inn2[`bat_${i}`].batName} ${iscaptain}</div>
+                        <div class="pname">${inn2[`bat_${i}`].batName} ${cstr}</div>
                         <div class="outdesc">${inn2[`bat_${i}`].outDesc}</div>
                     </div>
                 </td>
